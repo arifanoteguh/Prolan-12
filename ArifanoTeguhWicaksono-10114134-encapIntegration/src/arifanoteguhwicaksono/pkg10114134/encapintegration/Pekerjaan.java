@@ -2,7 +2,7 @@ package arifanoteguhwicaksono.pkg10114134.encapintegration;
 
 import java.util.Scanner;
 
-public class Pekerjaan{
+public class Pekerjaan extends GajidanLembur implements Info{
     Scanner input=new Scanner(System.in);
     String jenis, ceklembur2;
     boolean ceklembur;
@@ -18,7 +18,8 @@ public class Pekerjaan{
     jenis=input.nextLine();
     }
     
-    void terimaGaji(){
+    @Override
+    public void terimaGaji(){
         System.out.println("Gaji : Rp. 10000");
         gaji=10000;
     }
@@ -28,7 +29,8 @@ public class Pekerjaan{
         ceklembur=input.nextBoolean();            
     }
 
-    void upahLembur(){
+    @Override
+    public void upahLembur(){
         System.out.print("Upah Lembur/Jam : Rp. ");
         lembur=input.nextShort();
     }
@@ -46,5 +48,20 @@ public class Pekerjaan{
     public void getGajiTotal(){
         gajitotal=gaji+gajilembur;
         System.out.println("Gaji+Lembur : Rp. "+gajitotal);
+    }
+
+    @Override
+    public void dataUtama() {
+        System.out.println("Data Pekerjaan");
+    }
+
+    @Override
+    public void dataKedua() {
+        System.out.println("Data Pekerjaan Lanjutan");
+    }
+
+    @Override
+    public void info() {
+        System.out.println("Info Pekerjaan");
     }
 }

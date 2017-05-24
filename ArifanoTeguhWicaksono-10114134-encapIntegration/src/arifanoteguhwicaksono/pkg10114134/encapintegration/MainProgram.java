@@ -1,6 +1,6 @@
 package arifanoteguhwicaksono.pkg10114134.encapintegration;
 
-public class Pendataan extends Pekerjaan implements Info{
+public class MainProgram extends Pekerjaan implements Info{
     Pekerjaan kerja = new Pekerjaan();
     Manusia org = new Manusia();
     short waktu;
@@ -35,13 +35,13 @@ public class Pendataan extends Pekerjaan implements Info{
         System.out.println("Total Gaji");
     }
     
-    Pendataan(){
+    MainProgram(){
         super.jam+=1;
     }
 
     public static void main(String argv[]){
-        Pendataan penggaji = new Pendataan();
-        Info inface = new Pendataan();
+        MainProgram penggaji = new MainProgram();
+        Info inface = new MainProgram();
 
         inface.dataUtama();
         penggaji.methodInput();
