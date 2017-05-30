@@ -5,6 +5,7 @@ public class MainProgram extends Pekerjaan implements Info{
     Manusia org = new Manusia();
     short waktu;
     byte jam;
+    double jmlPajak;
 
     @Override
     void kerjaLembur(){
@@ -36,35 +37,55 @@ public class MainProgram extends Pekerjaan implements Info{
     }
     
     MainProgram(){
-        super.jam+=1;
+        gaji=kerja.gaji;
     }
 
     public static void main(String argv[]){
+        double gaji;
         MainProgram penggaji = new MainProgram();
         Info inface = new MainProgram();
-
+        Pekerjaan kerja = new Pekerjaan();
+        Manusia org = new Manusia();
+     
         inface.dataUtama();
-        penggaji.methodInput();
-        penggaji.methodInput("Mahasiswa");
-
-        inface.dataKedua();
-        penggaji.terimaGaji();
-        penggaji.kerjaLembur();
-        if(penggaji.ceklembur){
-                penggaji.upahLembur();
-                penggaji.jumlahLembur();
-        }
-        System.out.println("=======================================");
-        inface.info();
-        penggaji.getGajiTotal();
-    }
-
-    private void methodInput(){
         org.Manusia();
         org.setBerumur();
         org.jenisKelamin();
-    }
-    private void methodInput(String jenis){
         kerja.bekerjaSebagai();
+
+        inface.dataKedua();
+        kerja.terimaGaji();
+        gaji=kerja.gaji;
+        kerja.kerjaLembur();
+        if(kerja.ceklembur){
+                kerja.upahLembur();
+                kerja.jumlahLembur();
+        }
+        
+        System.out.println("=======================================");
+        
+        inface.info();
+        System.out.println("Gaji+Lembur : Rp. "+kerja.setGajiTotal());
+        penggaji.methodPajak(gaji);
+    }
+    
+    public void methodPajak(double gaji){
+        Pajak<Double> pjkGen = new Pajak<>();
+    
+        if(gaji>=1000000){
+            gaji=pjkGen.JumlahGaji(gaji);
+            jmlPajak=0.05*gaji;
+            System.out.println("Biaya Pajak : Rp. "+jmlPajak);
+        }else if(gaji>=3000000){
+            gaji=pjkGen.JumlahGaji(gaji);
+            jmlPajak=0.08*gaji;
+            System.out.println("Biaya Pajak : Rp. "+jmlPajak);
+        }else if(gaji>=5000000){
+            gaji=pjkGen.JumlahGaji(gaji);
+            jmlPajak=0.1*gaji;
+            System.out.println("Biaya Pajak : Rp. "+jmlPajak);
+        }else{
+            System.out.println("Tidak dikenakan Pajak");
+        }
     }
 }

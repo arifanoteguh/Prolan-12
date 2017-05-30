@@ -6,11 +6,11 @@ public class Pekerjaan extends GajidanLembur implements Info{
     Scanner input=new Scanner(System.in);
     String jenis, ceklembur2;
     boolean ceklembur;
-    int gaji, gajilembur;
-    private int gajitotal;
+    int gajilembur;
+    private double gajitotal;
     short lembur;
     byte jam;
-    double gajiBersih;
+    double gaji, gajiBersih;
        
 		
     void bekerjaSebagai(){
@@ -20,8 +20,8 @@ public class Pekerjaan extends GajidanLembur implements Info{
     
     @Override
     public void terimaGaji(){
-        System.out.println("Gaji : Rp. 10000");
-        gaji=10000;
+        System.out.print("Gaji : ");
+        gaji=input.nextDouble();
     }
     
     void kerjaLembur(){
@@ -45,11 +45,19 @@ public class Pekerjaan extends GajidanLembur implements Info{
             this.jam=jam;
     }
     
-    public void getGajiTotal(){
+    public double setGajiTotal(){
         gajitotal=gaji+gajilembur;
-        System.out.println("Gaji+Lembur : Rp. "+gajitotal);
+        return gajitotal;
     }
 
+    public void setGaji(double gaji){
+        this.gaji=gaji;
+    }
+    
+    public double getGaji(){
+        return gaji;
+    }
+    
     @Override
     public void dataUtama() {
         System.out.println("Data Pekerjaan");
