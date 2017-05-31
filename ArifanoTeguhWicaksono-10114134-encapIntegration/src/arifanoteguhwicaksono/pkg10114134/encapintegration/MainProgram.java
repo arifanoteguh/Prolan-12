@@ -6,6 +6,7 @@ public class MainProgram extends Pekerjaan implements Info{
     short waktu;
     byte jam;
     double jmlPajak;
+    int data;
 
     @Override
     void kerjaLembur(){
@@ -41,32 +42,9 @@ public class MainProgram extends Pekerjaan implements Info{
     }
 
     public static void main(String argv[]){
-        double gaji;
         MainProgram penggaji = new MainProgram();
-        Info inface = new MainProgram();
-        Pekerjaan kerja = new Pekerjaan();
-        Manusia org = new Manusia();
-     
-        inface.dataUtama();
-        org.Manusia();
-        org.setBerumur();
-        org.jenisKelamin();
-        kerja.bekerjaSebagai();
-
-        inface.dataKedua();
-        kerja.terimaGaji();
-        gaji=kerja.gaji;
-        kerja.kerjaLembur();
-        if(kerja.ceklembur){
-                kerja.upahLembur();
-                kerja.jumlahLembur();
-        }
         
-        System.out.println("=======================================");
-        
-        inface.info();
-        System.out.println("Gaji+Lembur : Rp. "+kerja.setGajiTotal());
-        penggaji.methodPajak(gaji);
+        penggaji.methodInputData();
     }
     
     public void methodPajak(double gaji){
@@ -86,6 +64,48 @@ public class MainProgram extends Pekerjaan implements Info{
             System.out.println("Biaya Pajak : Rp. "+jmlPajak);
         }else{
             System.out.println("Tidak dikenakan Pajak");
+        }
+    }
+    
+    public void methodInputData(){
+        double gaji;
+        MainProgram penggaji = new MainProgram();
+        Info inface = new MainProgram();
+        Pekerjaan kerja = new Pekerjaan();
+        Manusia org = new Manusia();
+     
+        System.out.print("Jumlah Data Yang Akan Dimasukkan : ");
+        data = input.nextInt();
+        for (int i = 0; i < data; i++) {
+            System.out.println("=======================================");
+            System.out.println("Data Ke - "+(i+1));
+            System.out.println("----");
+            inface.dataUtama();
+            System.out.println("----");
+            org.Manusia();
+            org.setBerumur();
+            org.jenisKelamin();
+            kerja.bekerjaSebagai();
+        
+            System.out.println("\n----");
+            inface.dataKedua();
+            System.out.print("----\n");
+            kerja.terimaGaji();
+            gaji=kerja.gaji;
+            kerja.kerjaLembur();
+            if(kerja.ceklembur){
+                    kerja.upahLembur();
+                    kerja.jumlahLembur();
+            }
+
+            System.out.println("=======================================");
+
+            System.out.println("\n----");
+            inface.info();
+            System.out.print("----\n");
+            System.out.println("Gaji+Lembur : Rp. "+kerja.setGajiTotal());
+            penggaji.methodPajak(gaji);
+
         }
     }
 }

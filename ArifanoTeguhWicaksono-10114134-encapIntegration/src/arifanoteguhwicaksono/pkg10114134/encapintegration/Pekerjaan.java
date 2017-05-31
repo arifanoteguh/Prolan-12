@@ -15,7 +15,7 @@ public class Pekerjaan extends GajidanLembur implements Info{
 		
     void bekerjaSebagai(){
     System.out.print("Bekerja Sebagai : ");
-    jenis=input.nextLine();
+    jenis=input.next();
     }
     
     @Override

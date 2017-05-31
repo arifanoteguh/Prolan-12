@@ -10,7 +10,7 @@ public class Manusia implements Info{
 
     public void Manusia(){
         System.out.print("Nama Lengkap : ");
-        this.nama=input.nextLine();
+        nama=input.next();
     }
 
     public void setBerumur(){
