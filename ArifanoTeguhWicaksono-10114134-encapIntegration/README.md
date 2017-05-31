@@ -8,6 +8,6 @@ Enkapsulasi program Pendataan Gaji
 + Pajak Generic
 + Improve MainProgram
 ==========================
-1 Juni
+31 May
 ------
 + Perulangan Input Data, sehingga data bisa dimasukkan lebih dari 1 kali
