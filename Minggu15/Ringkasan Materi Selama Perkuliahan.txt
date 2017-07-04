@@ -1,0 +1,136 @@
+=====================================================================================
+| Pertemuan |       Materi      |            Penjelasan         |   Folder GitHub   |
+=====================================================================================
+|     1     | Pengenalan        | -Tata Tertib                  | Minggu1           |
+|           |                   | -Menampilkan Hello World dgn  |                   |
+|           |                   |  Java                         |                   |
+|           |                   | -Membuat Akun Github          |                   |
+|           |                   | -Pengenalan dan sejarah Java  |                   |
+|           |                   | -Java dikembangkan oleh Sun   |                   |
+|           |                   |  Microsystem                  |                   |
+|           |                   | -Membuat Repositori Prolan-12 |                   |
+|           |                   |  pada Github                  |                   |
+=====================================================================================
+|     2     | Konsep OOP        | -OOP adalah sebuah paradigma  | Minggu2           |
+|           |                   |  yang berdasarkan objek       |                   |
+|           |                   | -Perbedaan OO dengan prosedural                   |
+|           |                   |  (Type vs Class, Var vs Objek)|                   |
+|           |                   | -Karakteristik OOP            |                   |
+|           |                   |  (Abstrak, Enkapsulasi,       |                   |
+|           |                   |  Generik, Inherit)            |                   |
+|           |                   | -Membuat Input Output pada    |                   |
+|           |                   |  Java                         |                   |
+|           |                   | -Input dengan Scanner         |                   |
+|           |                   | -Output dengan                |                   |
+|           |                   |  System.out.print();          |                   |
+=====================================================================================
+|     3     | Kelas dan Objek   | -Membuat kelas pada Java      | Minggu3           |
+|           |                   |  (Class namaKelas)            |                   |
+|           |                   | -Membuat objek                |                   |
+|           |                   |  (namaKelas namaObjek = new   |                   |
+|           |                   |  namaKelas)                   |                   |
+|           |                   | -Tipe-tipe Data (String, Int- |                   |
+|           |                   |  eger, Double, Real, Float,   |                   |
+|           |                   |  char, Boolean)               |                   |
+|           |                   | -Tugas membuat kelas pada Java|                   |
+=====================================================================================
+|     4     |      Method       | -Sekumpulan baris program atau|  Minggu4/Method   |
+|           |        dan        |  prosedur disebut method      |  Minggu4/NilaiIP  |
+|           |      Atribut      | -Method didefinisikan dalam   |                   |
+|           |                   |  Kelas                        |                   |
+|           |                   | -Contoh Method                |                   |
+|           |                   |   void namaMethod(parameter){}|                   |
+|           |                   | -Prosedur adalah variabel yg  |                   |
+|           |                   |  disematkan pada header       |                   |
+|           |                   | -Membuat method, atribut, this|                   |
+|           |                   |  dan konstruktor dari tugas   |                   |
+|           |                   |  sebelumnya                   |                   |
+|           |                   | -Membuat perulanan input nilai|                   |
+|           |                   |  IP yang berhenti apabila     |                   |
+|           |                   |  inputan berisi 999           |                   |
+=====================================================================================
+|     5     | Inheritance       | -Inheritance adalah suatu     | Minggu5/Inheritance
+|           |                   |  kelas turunan(seperti ayah   | Minggu5/Pilihan   |
+|           |                   |  yang menurunkan sifatnya     |                   |
+|           |                   |  ke anaknya)                  |                   |
+|           |                   | -Dengan inheritance, kelas yg |                   |
+|           |                   |  ada pada kelas ayah, bisa    |                   |
+|           |                   |  digunakan juga di kelas anak)|                   |
+|           |                   | -Contoh                       |                   |
+|           |                   |  class ayah{}                 |                   |
+|           |                   |  class anak extends ayah{}    |                   |
+|           |                   | -Menambahkan kelas inheritance|                   |
+|           |                   |  dari tugas sebelumnya        |                   |
+|           |                   | -Membuat inputan pilihan maks |                   |
+|           |                   |  min                          |                   |
+=====================================================================================
+|    6&7    | Override          | -Kelas yang diturunkan dari   | Minggu6/Override  |
+|           |      dan          |  kelas ayah dapat dimodifik-  |                   |
+|           |    Polimorifisme  |  asi atau ditambahkan dengan  |                   |
+|           |                   |  Overriding                   |                   |
+|           |                   | -Aturannya, namaKelas yang    |                   |
+|           |                   |  di Override haruslah sama    |                   |
+|           |                   |  dan Access modifiernya tidak |                   |
+|           |                   |  boleh lebih restrictive      |                   |
+|           |                   | -Polimorifisme adalah kemamp- |                   |
+|           |                   |  uan sebuah objek yang dapat  |                   |
+|           |                   |  memiliki banyak bentuk/kelas |                   |
+=====================================================================================
+|     9     | Abstrak           | -Kelas Abstrak digunakan untk | Minggu9/Abstrak2  |
+|           |                   |  open source program agar     |                   |
+|           |                   |  memudahkan pengembang atau   |                   |
+|           |                   |  memberitahu pengembang kalau |                   |
+|           |                   |  method/fungsi tsb harus ada  |                   |
+|           |                   |  tanpa pengguna tau bagaimana |                   |
+|           |                   |  caranya fungsi itu bekerja   |                   |
+|           |                   | -Contoh kelas Abstrak         |                   |
+|           |                   |  public abstrak namaKelas{}   |                   |
+|           |                   | -Abstrak juga bekerja pada    |                   |
+|           |                   |  method dengan cara           |                   |
+|           |                   |  public abstract void         |                   |
+|           |                   |  namaMethod();                |                   |
+=====================================================================================
+|     10    | Enkapsulasi       | -Sebuah proses untuk membungk-| ArifanoTeguhWic   |
+|           |                   |  us data dan fungsi dari sebu-| aksono-10114134-  |
+|           |                   |  ah kelas menjadi sebuah unit | encapIntegration  |
+|           |                   |  disebut enkapsulasi          |                   |
+|           |                   | -Membuat Getter dan Setter    |                   |
+|           |                   | -Getter untuk mengembalikan   |                   |
+|           |                   |  data                         |                   |
+|           |                   | -Setter untuk menentukan data |                   |
+=====================================================================================
+|     11    | Interface         | -Interface hampir serupa dgn  | AnotherClass      |
+|           |                   |  kelas hanya saja, pada Inter-|                   |
+|           |                   |  face kita tidak bisa melakuk-|                   |
+|           |                   |  an instansiasi, tidak memiliki                   |
+|           |                   |  konstruktor, dan semua method|                   |
+|           |                   |  berbentuk abstrak            |                   |
+|           |                   | -Menambahkan inerface pada    |                   |
+|           |                   |  tugas sebelumnya             |                   |
+=====================================================================================
+|     12    | Kelas Generic     | -kelas umum/universal         | ArifanoTeguhWic   |
+|           |                   | -tidak menggunakan tipe data  | aksono-10114134-  |
+|           |                   | -Contohnya                    | encapIntegration  |
+|           |                   |  public class namaKelas<T>{}  |                   |
+|           |                   | -Menambahkan kelas generik dr |                   |
+|           |                   |  tugas sebelumnya             |                   |
+=====================================================================================
+|     13    | Method Generic    | -Digunakan untuk menyatakan   | ArifanoTeguhWic   |
+|           |                   |  tipe parameter method yang   | aksono-10114134-  |
+|           |                   |  tidak berkaitan dengan tipe  | encapIntegration  |
+|           |                   |  parameter yang dimiliki kelas|                   |
+|           |                   | -Contohnya                    |                   |
+|           |                   |  public <T> void namaMethod() |                   |
+|           |                   | -Menambahkan method generik dr|                   |
+|           |                   |  tugas sebelumnya             |                   |
+=====================================================================================
+|     14    | Packge            | -Untuk menghindari konflik    | ArifanoTeguhWic   |
+|           |                   |  penamaan kelas, interface, dll aksono-10114134-  |
+|           |                   | -Pembungkus kumpulan kelas    | encapIntegration  |
+|           |                   |  atau interface               |                   |
+|           |                   | -Contoh package               |                   |
+|           |                   |  package namaPackage;         |                   |
+|           |                   |  namaKelas{}                  |                   |
+=====================================================================================
+|     15    | Ringkasan Materi  | -Meringkas materi dari awal   | Minggu15          |
+|           |                   |  perkuliahan                  |                   |=====================================================================================
